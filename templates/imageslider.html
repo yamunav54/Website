@@ -1,0 +1,80 @@
+<div class="slide-container">
+    <span id="slider-image-one"></span>
+    <span id="slider-image-two"></span>
+    <span id="slider-image-three"></span>
+    <span id="slider-image-four"></span>
+    <span id="slider-image-five"></span>
+
+    <div class="image-container">
+        <img src="/static/images/one.JPG" class="slider-image">
+        <img src="/static/images/two.JPG" class="slider-image">
+        <img src="/static/images/three.JPG" class="slider-image">
+        <img src="/static/images/four.JPG" class="slider-image">
+        <img src="/static/images/five.JPG" class="slider-image">
+    </div>
+
+    <div class="button-container">
+        <a href="#slider-image-one" class="slider-button"></a>
+        <a href="#slider-image-two" class="slider-button"></a>
+        <a href="#slider-image-three" class="slider-button"></a>
+        <a href="#slider-image-four" class="slider-button"></a>
+        <a href="#slider-image-five" class="slider-button"></a>
+    </div>
+</div>
+
+
+
+.slide-container {
+    width:1500px;
+    height:600px;
+    margin-left:auto;
+    margin-right:auto;
+    overflow:hidden;
+    text-align:center;
+    padding-top: 1opx;
+}
+
+.image-container {
+    width:1200px;
+    height:600px;
+    position: relative;
+    transition:left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition:left 2s;
+
+}
+
+.slider-image{
+    float:left;
+    margin:0px;
+    padding:0px;
+
+}
+
+.button-container{
+    top-20px;
+    position:relative;
+}
+.slider-button{
+    display:inline-block;
+    height:10px;
+    width:10px;
+    border-radius:5px;
+    background-color:white;
+}
+#slider-image-one:target ~.image-container{
+    left:0px;
+}
+#slider-image-two:target ~.image-container{
+    left:-800px;
+}
+#slider-image-three:target ~.image-container{
+    left:-600px;
+}
+#slider-image-four:target ~.image-container{
+    left:-2400px;
+}
+#slider-image-five:target ~.image-container{
+    left:-3200px;
+}

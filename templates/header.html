@@ -1,0 +1,30 @@
+{%load static %}
+<header>
+    <div class="tagline">
+        <div class="callimage">
+            <img src="{% static 'images/call.png' %}">
+        </div>
+        <div class="callnum">
+            <h4>+919384402100</h4>
+        </div>
+    </div>
+    <div class="logo">
+        <img src="/static/images/logo.png">
+    </div>
+    <div id="nav">
+        <ul id="link">
+            <li><a href="{% url 'home'%}"> Home </a></li>
+            <li><a href="{% url 'about'%}">About Us </a></li>
+            <li><a href="{% url 'services'%}">Services</a></li>
+            <li><a href="{% url 'contact'%}">Contact Us </a></li>
+        </ul>
+    <div class="tag">
+        <div class="mailimage">
+            <img src="{% static 'images/mail.png'%}">
+        </div>
+        <div class="callnum">
+            <h4>yammu@anumayconsultancy.com</h4>
+        </div>
+
+    </div>
+</header>
