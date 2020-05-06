@@ -6,54 +6,47 @@
 
 
 <div id ="container3">
-    <h2><b>Leave us a message:</b></h2></br>
-    <div id ="message">
-        <form action="" method="post">  {% csrf_token %}
+    <div class="formheading">
+        <h2><b>Leave us a message:</b></h2></br>
+        <div id ="message">
+            <form action="" method="post">  {% csrf_token %}
 
-            {{ form|crispy}}
-            <button type="SUBMIT">SUBMIT</button>
+                {{ form|crispy}}
+                <button type="SUBMIT">SUBMIT</button>
 
-        </form>
+            </form>
+        </div>
     </div>
 
-
-
-    <div id="map">
-        <div id="mapinfo">
-            <h2>CONTACT AS:</h2>
-        </div></br>
-        <p>
-            Anumay Consultancy</br>
-            Kullappanaickanur</br>
-            Salem-Dt</br>
-            Tamilnadu</br>
-            India</br>
-            <a href="#" class="fa fa-phone">+919384402100</a>
-
-        </p>
+    <div class="contactheading">
+        <h2><b>Contact Us:</b></h2></br>
+        <div id='mapview'>
+            <script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoieWFtdW5hdjU0IiwiYSI6ImNrOTRhd3BreDAzZzYzaG1saTVrYmsxc2wifQ.GAOTPor4Rofy4LP5GUzb3Q';
+                var map = new mapboxgl.Map({
+                container: 'mapview',
+                style: 'mapbox://styles/mapbox/streets-v11',
+                center:[78.1788,11.5712],
+                zoom:11
+                });
+            </script>
 
         </div>
-    <div id='mapview'>
-        <script>
-            mapboxgl.accessToken = 'pk.eyJ1IjoieWFtdW5hdjU0IiwiYSI6ImNrOTRhd3BreDAzZzYzaG1saTVrYmsxc2wifQ.GAOTPor4Rofy4LP5GUzb3Q';
-            var map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v11',
-            center:[78.1788,11.5712],
-            zoom:12
-            });
-        </script>
+        <div id="map">
+            <h4>Better yet, see us in person!</h4>
+            <p>We love to meet budding restaurateur, feel free to get in touch !</p>
+            <h4>
+                Anumay Consultancy pvt ltd
+                </h4>
+            </p>Salem, Tamilnadu, India-636204</p>
+            <i class="fa fa-phone fa-1x">&nbsp;&nbsp;+919384402100</i><br>
+            <i class="fa fa-envelope-o fa-1x" aria-hidden="true">&nbsp;&nbsp;hr@anumayconsultancy.com</i><br>
+            <h5>Opening hours:&nbsp;&nbsp;Monday to Friday[10am t0 8pm]</h4>
+        </div>
 
     </div>
-
-
-
-
 </div>
-<div id="msgtxt"><h2><b>WE WILL GET BACK TO YOU AS SOON AS POSSIBLE</b></h2></div>
 
-
+<div id="msgtxt"><h3><b>WE WILL GET BACK TO YOU AS SOON AS POSSIBLE</b></h3></div>
 {% include "footer.html"%}
-
-
 {% endblock content %}

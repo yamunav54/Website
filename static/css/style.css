@@ -18,7 +18,7 @@ body {
     justify-content: centre;
     align-items: centre;
     min-height:100vh;
-    background-color:  #fdfef9 !important;
+    background-color:  #dcddd9 !important;
 }
 
 /* nav ul{
@@ -31,7 +31,7 @@ header{
     background-color:rgb(95, 84, 84);
     padding:25px;
     color:rgb(219, 204, 204);
-    height:180px;
+    height:160px;
 
 }
 
@@ -55,8 +55,9 @@ header{
 .callimage {
     padding-right: 20px;
 }
-.callnum {
+.callnum h4 a {
     margin-top: 09px;
+    color:rgb(219, 204, 204);
 }
 
 .mailimage {
@@ -75,6 +76,7 @@ header{
 }
 .tagline h4{
     font-size:16px;
+    margin-top: 07px;
 }
 .mailimage img {
     height: 30px;
@@ -100,7 +102,6 @@ ul#link {
     display: inline;
     padding-left: 60px;
     line-height: 50px;
-    font-size: 28px;
     padding-bottom: 0ch;
 
 }
@@ -111,8 +112,7 @@ ul#link {
 #link li a{
     text-decoration: none;
     color:rgb(219, 204, 204);
-
-
+    font-size: 22px;
 }
 #link li a:hover{
     background-color: rgb(245, 234, 234);
@@ -325,36 +325,56 @@ ul#link {
 
 #container2{
     /*    background:rgb(194, 150, 194);*/
-    height:650px;
-    width:90%;
-    padding-top:55px;
+    height:700px;
+    width:98%;
+    line-height: 1.3px;
+
     padding-left:50px;
-    margin-right:30px;
+
+
+
     margin-top:30px;
 
 }
 
 #lftbx1{
-    height:570px;
+    height:200px;
     float:left;
-    width:50%;
-    padding:5px 5px 5px 10px;
-    font-size:18;
-    border:ridge;
+    width:65%;
+    padding:5px 5px 0px 10px;
+
     line-height: 30px;
+    text-align: justify;
+    box-sizing: border-box;
 }
 
 #rightbx2{
-    height:570px;
+    height:240px;
     float:right;
-    width:45%;
-    padding:5px 5px 5px 10px;
+    width:35%;
+
     font-size:18;
-    border:ridge;
+    background:white;
     line-height: 30px;
+    border-bottom:240px solid transparent;
+    border-left:100px solid #dcddd9 ;
+
 }
+#rightbx2 img{
+    height:240px;
+    width:240px;
+}
+#lftbxl2{
+    height:210px;
 
 
+    padding:0px 5px 5px 10px;
+    font-size:18;
+    line-height: 35px;
+    text-align: justify;
+    box-sizing: border-box;
+
+}
 footer{
     text-align: centre;
     background-color:rgb(95, 84, 84);
@@ -363,12 +383,13 @@ footer{
 }
 
 .fa {
-    padding: 20px;
+
     font-size: 30px;
     width: 50px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
+    padding-bottom: 15px;
   }
 
   .fa:hover {
@@ -410,8 +431,11 @@ footer{
     color: white;
   }
   .fa-phone {
-    margin: 20px 20px;
+
+    color:black;
   }
+
+
   .sociallinks {
     margin: 20px 20px;
     text-align: center;
@@ -422,38 +446,39 @@ footer{
   }
 
 #container3{
-    height:700px;
+    height:750px;
     width:90%;
-
     padding:20px;
-
-
     margin-left:20px;
-
     padding-left:50px;
     margin-right:30px;
     margin-top:30px;
 }
 
+.formheading{
+    width:45%;
+    font-size:15;
+    border-color: aliceblue;
+    height:700px;
+    float:left;
+    padding:5px 5px 5px 10px;
 
-#msgtxt h2{
+}
+#msgtxt h3{
     text-align: center;
     padding-top:2px;
 }
 
 
 #message{
-    border:ridge;
 
-
-    width:50%;
+    width:100%;
     font-size:15;
+    border:ridge;
     border-radius: 1ch;
     border-color: aliceblue;
-
     height:600px;
     float:left;
-
     padding:5px 5px 5px 10px;
 
 }
@@ -461,20 +486,30 @@ footer{
     line-height:60px;
 
 }
-#map{
-
-    height:600px;
+.contactheading{
+    width:50%;
+    font-size:15;
+    border-color: aliceblue;
+    height:700px;
     float:right;
-    width:45%;
     padding:5px 5px 5px 10px;
-    font-size:18;
-    border:ridge;
-
 
 }
-#map info {
+#map{
+    width:100%;
+    font-size:15;
+
+    height:200px;
+    float:right;
+    padding:35px 5px 5px 10px;
+}
+#mapinfo {
     line-height: 30px;
 
+}
+#mapview{
+
+    height:300px;
 }
 .container4{
     display:flex;
@@ -482,6 +517,16 @@ footer{
     justify-content: space-between;
     padding-top: 40px;
     width:100%;
+}
+#services{
+    padding:20px;
+}
+#services p {
+    margin: 12px;
+    padding: 5px;
+    margin-bottom: 1rem;
+    line-height: 28px;
+    text-align: justify;
 }
 .container4 .box
 {
@@ -494,6 +539,14 @@ footer{
     box-sizing: border-box;
     overflow:hidden;
 
+}
+.container4 .box .content p{
+    text-align: justify;
+
+}
+.container4 .box .content h3 {
+    text-align: center;
+    color: #1c1b1b;
 }
 .container4 .box .icon{
     position:relative;
@@ -510,10 +563,13 @@ footer{
     font-weight:700;
     transition: 1s;
 }
+
 .container4 .box .content{
     padding-top:15px;
 }
-
+.container4 .box .content ul {
+    padding: 0px 30px;
+}
 .container4 .box:nth-child(1) .icon{
     box-shadow: 0 0 0 0 #524b4d;
     background:#524b4d;
